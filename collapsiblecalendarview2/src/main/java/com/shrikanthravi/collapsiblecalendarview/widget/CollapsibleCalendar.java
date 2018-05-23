@@ -577,6 +577,11 @@ public class CollapsibleCalendar extends UICalendar {
         }
     }
 
+    public void clearEvent()
+    {
+        mAdapter.clearEvents();
+    }
+
     // callback
     public void setCalendarListener(CalendarListener listener) {
         mListener = listener;
