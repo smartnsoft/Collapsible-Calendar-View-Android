@@ -317,6 +317,12 @@ public class CollapsibleCalendar extends UICalendar {
         reload();
     }
 
+    public void clearEvent()
+    {
+        mAdapter.clearEvents();
+        reload();
+    }
+
     public void prevMonth() {
         Calendar cal = mAdapter.getCalendar();
         if (cal.get(Calendar.MONTH) == cal.getActualMinimum(Calendar.MONTH)) {
@@ -577,10 +583,6 @@ public class CollapsibleCalendar extends UICalendar {
         }
     }
 
-    public void clearEvent()
-    {
-        mAdapter.clearEvents();
-    }
 
     // callback
     public void setCalendarListener(CalendarListener listener) {

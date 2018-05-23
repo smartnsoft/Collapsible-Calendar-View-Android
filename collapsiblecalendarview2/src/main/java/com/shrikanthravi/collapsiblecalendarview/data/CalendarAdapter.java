@@ -63,7 +63,6 @@ public class CalendarAdapter {
 
     public void clearEvents() {
         mEventList.clear();
-        refresh();
     }
 
     public void refresh() {
